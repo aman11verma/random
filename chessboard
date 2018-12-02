@@ -1,0 +1,23 @@
+#include "Open CV2/highgui/highgui.hpp"
+#include "Open CV2/imgproc/imgproc.hpp"
+#include "Open CV2/core/core.hpp"
+using namespace cv;
+int main()
+{ 
+Mat img(100,100,CV_8UC1,Scalar(0);
+for(int i=0;i<100;i++)
+{
+for(int j=0;j<100;j++)
+{
+if((i+j)%2==1)
+{
+img.at<uchar>=255;
+}
+}
+}
+named WINDOW("win",WINDOW_NORMAL);
+imshow("win",img);
+waitKey(0);
+return 0;
+}
+
